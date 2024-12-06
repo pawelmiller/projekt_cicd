@@ -9,7 +9,7 @@ resource "aws_instance" "app" {
   tags = {
     Name = "PythonAppInstance"
   }
-
+}
   provisioner "remote-exec" {
     inline = [
       "docker run -d -p 80:80 python-app"
