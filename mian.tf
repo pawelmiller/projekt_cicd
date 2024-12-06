@@ -8,7 +8,7 @@ resource "aws_instance" "app" {
 
   tags = {
     Name = "PythonAppInstance"
-  }
+  } 
 }
   provisioner "remote-exec" {
     inline = [
